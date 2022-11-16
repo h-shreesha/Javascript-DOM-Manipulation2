@@ -50,7 +50,7 @@ function createFaq(question, answer) {
     faq_header.appendChild(button);
 
     const p = document.createElement('p');
-    p.innerText = 'p';
+    p.innerText = answer;
     p.classList.add('hidden');
     faq.appendChild(p);
 }
@@ -58,7 +58,8 @@ function createFaq(question, answer) {
 function btnStatusUpdate() {}
 
 const queList = document.querySelectorAll('.show_btn');
-listOfFaq.forEach((f) => {
+console.log(queList); 
+queList.forEach((f) => {
     f.addEventListener('click', () => {
         const answer = f.parentElement.parentElement.lastChild;
         answer.classList.toggle('hidden');
