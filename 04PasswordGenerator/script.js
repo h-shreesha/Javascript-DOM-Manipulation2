@@ -15,7 +15,7 @@ const randomFunc = {
 }
 
 clipboardEl.addEventListener('click', () => {
-    
+    g
 })
 
 generateEl.addEventListener('click', () => {
